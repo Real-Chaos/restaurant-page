@@ -1,14 +1,5 @@
 const header = () => {
-  // <header class="header">
-  //       <h1 class="logo">Mozzafiato</h1>
-  //       <nav class="tab-nav">
-  //         <ul>
-  //           <li>Home</li>
-  //           <li>Menu</li>
-  //           <li>Contact</li>
-  //         </ul>
-  //       </nav>
-  //     </header>
+
   const headerElement = document.createElement('header')
   const logo = document.createElement('h1')
   const nav = document.createElement('nav')

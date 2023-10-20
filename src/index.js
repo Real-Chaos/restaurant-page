@@ -3,12 +3,13 @@ import './styles.css'
 import header from "./header"
 import footer from "./footer"
 import menu from "./menu"
+import contact from "./contact"
 
 const displayPage = () => {
   const content = document.querySelector('#content')
   const pageContent = document.createElement('div')
   pageContent.classList.add('page-content')
-  pageContent.appendChild(menu())
+  pageContent.appendChild(contact())
 
   content.appendChild(header())
   content.appendChild(pageContent)
@@ -34,26 +35,11 @@ const displayPage = () => {
   })
   contactTab.addEventListener('click', () => {
     pageContent.innerHTML = ""
-    const div = document.createElement('div')
-    div.textContent = 'contact'
-    pageContent.appendChild(div)
+    pageContent.appendChild(contact())
     content.appendChild(pageContent)
   })
   
-  
 
-  // homeTab.addEventListener('click', () => {
-  //   content.innerHTML = ""
-  //   content.appendChild(home())
-  // })
-  // menuTab.addEventListener('click', () => {
-  //   content.innerHTML = ""
-  //   content.appendChild("Menu")
-  // })
-  // contactTab.addEventListener('click', () => {
-  //   content.innerHTML = ""
-  //   content.appendChild("Contact")
-  // })
   
 }
 

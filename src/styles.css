@@ -54,7 +54,7 @@ body {
   padding-bottom: 100px;
 }
 
-.page-content .home-content, .menu-content{
+.page-content .home-content, .menu-content, .contact-content{
   padding: 40px 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -102,6 +102,23 @@ body {
 
 .menu-card img {
   width: 150px;
+}
+
+.contact-content {
+  color: white;
+  font-weight: bolder;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-content p {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 footer {

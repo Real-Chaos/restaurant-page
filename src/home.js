@@ -3,14 +3,7 @@ import footer from "./footer"
 import chefSrc from './images/chef.png'
 
 const home = () => {
-  // <div class="home-content">
-  //         <h2>Best Pizza in the country</h2>
-  //         <h3>Made with passion since 1908</h3>
-  //         <img src="../src/images/chef.png" alt="" />
-  //         <h3>Order online or visit us!</h3>
-  //       </div>
-  //     </div>
-  
+
   
   const homeContent = document.createElement('div')
   const h2 = document.createElement('h2')
