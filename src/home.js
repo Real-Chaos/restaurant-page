@@ -11,9 +11,8 @@ const home = () => {
   //       </div>
   //     </div>
   
-  const homeElement = document.createElement('div')
+  
   const homeContent = document.createElement('div')
-  const subDiv = document.createElement('div')
   const h2 = document.createElement('h2')
   const h3 = document.createElement('h3')
   const chefImg = new Image()
@@ -21,21 +20,18 @@ const home = () => {
 
 
   homeContent.classList.add('home-content')
-  homeElement.classList.add('home')
+  
   h2.textContent = 'Best Pizza in the World!'
   h3.textContent = 'Made with passion since 1908'
   chefImg.src = chefSrc
   orderH3.textContent = 'Order online or Visit us!'
 
-  subDiv.appendChild(h2)
-  subDiv.appendChild(h3)
-  subDiv.appendChild(chefImg)
-  subDiv.appendChild(orderH3)
-
-  homeContent.appendChild(subDiv)
-  homeElement.appendChild(homeContent)
+  homeContent.appendChild(h2)
+  homeContent.appendChild(h3)
+  homeContent.appendChild(chefImg)
+  homeContent.appendChild(orderH3)
   
-  return homeElement
+  return homeContent
 }
 
 

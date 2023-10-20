@@ -5,10 +5,12 @@ import footer from "./footer"
 
 const displayPage = () => {
   const content = document.querySelector('#content')
-  
+  const pageContent = document.createElement('div')
+  pageContent.classList.add('page-content')
+  pageContent.appendChild(home())
 
   content.appendChild(header())
-  content.appendChild(home())
+  content.appendChild(pageContent)
   content.appendChild(footer())
 
 
@@ -19,22 +21,26 @@ const displayPage = () => {
   
   
   homeTab.addEventListener('click', () => {
-    document.querySelector('#content div').remove()
-
-    content.appendChild(home())
+    pageContent.innerHTML = ""
+    pageContent.appendChild(home())
+    content.appendChild(pageContent)
   })
 
   menuTab.addEventListener('click', () => {
-    document.querySelector('#content div').remove()
+    pageContent.innerHTML = ""
+
     const div = document.createElement('div')
     div.textContent = 'menu'
-    content.appendChild(div)
+
+    pageContent.appendChild(div)
+    content.appendChild(pageContent)
   })
   contactTab.addEventListener('click', () => {
-    document.querySelector('#content div').remove()
+    pageContent.innerHTML = ""
     const div = document.createElement('div')
     div.textContent = 'contact'
-    content.appendChild(div)
+    pageContent.appendChild(div)
+    content.appendChild(pageContent)
   })
   
   
