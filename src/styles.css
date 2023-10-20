@@ -50,25 +50,58 @@ body {
 .page-content {
   display: flex;
   justify-content: center;  
-  padding: 30px 0;
+  padding: 2% 20%;
+  padding-bottom: 100px;
+}
+
+.page-content .home-content, .menu-content{
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .page-content .home-content {
-  padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  width: max(300px, 30%);
-  height: 500px;
+  width: 500px;
+  height: min(500px);
   gap: 30px;
 }
 
 .home-content img {
-  width: 50%;
+  width: 300px;
+}
+
+.menu-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  grid-row-gap: 50px;
+  padding: 30px;
+
+}
+
+.menu-card {
+  display: grid;
+  justify-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 30px 60px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.menu-card img {
+  width: 150px;
 }
 
 footer {
