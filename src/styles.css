@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.tab-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+
+}
+
+.tab-nav ul li {
+  font-weight: bolder;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tab-nav ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+
+.home-content {
+  display: flex;
+  justify-content: center;  
+  padding: 30px 0;
+}
+
+.home-content div {
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: max(300px, 30%);
+  height: 500px;
+  gap: 30px;
+}
+
+.home-content div img {
+  width: 50%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  margin-top: 40px;
+}
